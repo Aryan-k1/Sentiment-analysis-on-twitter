@@ -1,0 +1,121 @@
+/* styles.css */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "headerFont";
+  src: local("CustomFont"),
+    url(".././Components/Fonts/Inter-Regular.ttf") format("truetype"); /* adjust the path accordingly */
+}
+.main-container {
+  /* display: flex; */
+  font-family: "Montserrat", sans-serif;
+
+  padding: 0;
+  margin: 0;
+  /* height: 100vh; */
+  /* min-height: 9vh; */
+}
+
+.first-section {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-section {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* writing code for text css on the main page
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+.centered-text {
+  font-family: "Nunito", sans-serif;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  padding: 0;
+  margin: 0;
+  /* height: 100vh; */
+}
+
+.big-text {
+  /* font-size: 4rem; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.wide-text {
+  letter-spacing: 4px; /* Adjust the letter spacing as needed */
+}
+
+.textImageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 2%; */
+}
+
+/* .text,
+.image {
+  flex: 1;
+  padding: 10px; Add padding as needed
+} */
+.animated-header {
+  animation: slideIn 0.7s ease-in-out;
+}
+
+.animated-header2 {
+  animation: slideIn 1.35s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Image.css */
+/* Image.css */
+
+/* Image.css */
+
+/* Image.css */
+
+.image-container {
+  overflow: hidden; /* Hide the overflow to prevent horizontal scrollbar */
+}
+
+.animated-slide-in {
+  animation: slide 1s ease-in-out; /* Apply the animation */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateX(0%); /* Slide in to the center of the screen */
+  }
+}
